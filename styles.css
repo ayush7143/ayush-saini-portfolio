@@ -6,63 +6,84 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
   line-height: 1.6;
-  overflow-x: hidden;
+  color: #333;
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: auto;
   max-width: 1200px;
   padding: 20px;
 }
 
-.header {
-  background-color: #333;
+.hero {
+  height: 100vh;
+  background: url('img.jpg') no-repeat center center/cover;
   color: white;
-  padding: 20px 0;
   text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header .title {
-  font-size: 3em;
+
+.hero h1 {
+  font-size: 4em;
   margin-bottom: 10px;
 }
 
-.header .contact-info a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
 
-.header .nav-menu {
+.btn {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff4500;
+}
+
+.header {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-menu {
+  list-style: none;
   display: flex;
   justify-content: center;
 }
 
-.header .nav-menu li {
-  list-style: none;
-  margin: 0 15px;
+.nav-menu li {
+  margin: 0 20px;
 }
 
-.header .nav-menu li a {
+.nav-menu li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  transition: color 0.3s ease;
+  padding: 15px 0;
+  display: block;
 }
 
-.header .nav-menu li a:hover {
+.nav-menu li a:hover {
   color: #ff6347;
 }
 
 .section {
-  padding: 60px 0;
+  padding: 80px 0;
   text-align: center;
 }
 
@@ -71,24 +92,21 @@ h2 {
   margin-bottom: 20px;
 }
 
-p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+.skills-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.skills-list,
-ul {
-  list-style: none;
-  text-align: center;
-  font-size: 1.2em;
+.skill-card, .project-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-.skills-list li {
-  margin-bottom: 10px;
-}
-
-.project, .experience-item {
-  margin-bottom: 30px;
+.skill-card:hover, .project-card:hover {
+  transform: translateY(-10px);
 }
 
 footer {
@@ -97,25 +115,10 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
-
-footer p {
-  margin: 0;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.section {
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-body::-webkit-scrollbar {
-  width: 8px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #ff6347;
+.project-img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
+
