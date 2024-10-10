@@ -1,108 +1,121 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  .container {
-    width: 90%;
-    margin: auto;
-    max-width: 1200px;
-    padding: 20px;
-  }
-  
-  .header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .header .title {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  
-  .header .contact-info a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
-  .header nav ul {
-    list-style: none;
-  }
-  
-  .header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  .header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  .header nav ul li a:hover {
-    color: #ff6347;
-  }
-  
-  .section {
-    padding: 60px 0;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  
-  .skills-list,
-  ul {
-    list-style: none;
-    text-align: center;
-    font-size: 1.2em;
-  }
-  
-  .skills-list li {
-    margin-bottom: 10px;
-  }
-  
-  .project, .experience-item {
-    margin-bottom: 30px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  .section {
-    animation: fadeIn 1.5s ease-in-out;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .title {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.header .contact-info a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.header .nav-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.header .nav-menu li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.header .nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.header .nav-menu li a:hover {
+  color: #ff6347;
+}
+
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.skills-list,
+ul {
+  list-style: none;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+}
+
+.project, .experience-item {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.section {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff6347;
+  border-radius: 10px;
+}
