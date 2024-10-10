@@ -6,99 +6,94 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ayush Saini - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Fullscreen Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Ayush Saini</h1>
+      <p>Data Enthusiast & Machine Learning Developer</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Navigation -->
   <header class="header">
     <div class="container">
-      <h1 class="title">Ayush Saini</h1>
-      <p class="contact-info">
-        <a href="mailto:saini.ayush11@gmail.com">saini.ayush11@gmail.com</a> | 
-        <a href="tel:+917895300383">(+91) 7895300383</a> | 
-        <a href="https://www.linkedin.com/in/ayush-saini" target="_blank">LinkedIn</a>
-      </p>
       <nav>
-        <ul>
+        <ul class="nav-menu">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section id="about" class="section">
+  <!-- About Section -->
+  <section id="about" class="section" data-aos="fade-up">
     <div class="container">
       <h2>About Me</h2>
-      <p>Self-motivated & data-driven enthusiast with experience in data science and services, specializing in statistical analysis, data visualization, and business reporting.</p>
+      <p>Self-motivated & data-driven enthusiast...</p>
     </div>
   </section>
 
-  <section id="skills" class="section">
+  <!-- Skills Section -->
+  <section id="skills" class="section" data-aos="fade-up">
     <div class="container">
       <h2>Skills</h2>
-      <ul class="skills-list">
-        <li><strong>Tools:</strong> Excel, Tableau, PowerBI</li>
-        <li><strong>Database:</strong> MySQL, SQL Server</li>
-        <li><strong>Programming:</strong> Python, SQL</li>
-        <li><strong>Data Science Toolkits:</strong> Scikit-learn, Pandas, Matplotlib</li>
-        <li><strong>Languages:</strong> Hindi (Native), English (Fluent)</li>
-      </ul>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Python</h3>
+          <p>Advanced proficiency in Python for data science and machine learning.</p>
+        </div>
+        <div class="skill-card">
+          <h3>SQL</h3>
+          <p>Experience with SQL Server and MySQL for database management.</p>
+        </div>
+        <!-- Add more skill cards here -->
+      </div>
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <!-- Projects Section -->
+  <section id="projects" class="section" data-aos="fade-up">
     <div class="container">
       <h2>Projects</h2>
-      <div class="project">
-        <h3>Real Estate Data Analysis Platform</h3>
-        <p><strong>Objective:</strong> Provide insights for real estate decision-making through data aggregation and ML models.</p>
-        <p><strong>Tech Stack:</strong> Python, SQL, Scikit-learn, Excel</p>
+      <div class="project-card">
+        <img src="image.png" alt="Real Estate Data Analysis" class="project-img">
+        <h3>Real Estate Data Analysis</h3>
+        <p>Developed a data-driven platform for real estate insights using Python and SQL.</p>
+      </div>
+      
+        <!-- Add more project cards here -->
       </div>
     </div>
   </section>
 
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="experience-item">
-        <h3>Data Analytics Intern</h3>
-        <p><strong>Company:</strong> KPMG - October 2023</p>
-        <p><strong>Role:</strong> Enhanced customer engagement strategies using Excel, SQL, Tableau, and Python.</p>
-      </div>
-      <div class="experience-item">
-        <h3>Corporate Analyst</h3>
-        <p><strong>Company:</strong> JPMorgan Chase - September 2023</p>
-        <p><strong>Role:</strong> Created interactive Tableau dashboards with custom data filters.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="education" class="section">
-    <div class="container">
-      <h2>Education</h2>
-      <p><strong>B.Tech in Mechanical Engineering</strong> - Roorkee College of Engineering, Uttarakhand (2012 - 2016)</p>
-      <p><strong>PG Program in Data Science, Machine Learning & Neural Networks</strong> - Data Trained Education Pvt. Ltd.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
+  <!-- Contact Section -->
+  <section id="contact" class="section" data-aos="fade-up">
     <div class="container">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:saini.ayush11@gmail.com">saini.ayush11@gmail.com</a></p>
       <p>Phone: <a href="tel:+917895300383">(+91) 7895300383</a></p>
-      <p>GitHub: <a href="https://github.com/ayush7143" target="_blank">GitHub Profile</a></p>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2024 Ayush Saini. All rights reserved.</p>
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
